@@ -998,7 +998,7 @@
                     const blob = new Blob([e.target.result], { type: 'application/pdf' });
                     const url = URL.createObjectURL(blob);
                     pdfFrame.src = url;
-                    pdfViewer.style.display = 'open';
+                    pdfViewer.style.display = 'bolck';
                 };
                 reader.readAsArrayBuffer(file);
             } else {
