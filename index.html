@@ -3,39 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free AI-powered document converter that preserves layout and formatting. Convert between PDF, DOCX, PPTX, TXT, JPG and more with high accuracy.">
-    <meta name="keywords" content="document converter, PDF converter, file converter, DOCX to PDF, AI document tool, free file conversion">
-    <meta name="author" content="Document Converter AI">
-    <meta name="robots" content="index, follow">
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "AI Document Converter",
-      "url": "https://www.yourdomain.com",
-      "description": "Free AI-powered document converter that preserves layout and formatting during conversion.",
-      "applicationCategory": "UtilityApplication",
-      "operatingSystem": "Any",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
-    }
-    </script>
-    <title>AI Document Converter | Preserve Layout & Formatting | Free Online Tool</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Quran PDF Viewer - Read Holy Quran Online</title>
+    <meta name="description" content="Read the Holy Quran online with our responsive PDF viewer. Select different translations and editions for enhanced spiritual study.">
+    <meta name="keywords" content="Quran, PDF, online Quran, Holy Quran, Islamic book, Muslim, read Quran">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/quran-pdf">
+    <meta property="og:title" content="Online Quran PDF Viewer">
+    <meta property="og:description" content="Read the Holy Quran online with our responsive PDF viewer with multiple translations.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://example.com/quran-pdf">
+    <meta property="twitter:title" content="Online Quran PDF Viewer">
+    <meta property="twitter:description" content="Read the Holy Quran online with our responsive PDF viewer with multiple translations.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://example.com/quran-pdf">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+    
     <style>
         :root {
-            --primary-color: #4285f4;
-            --secondary-color: #34a853;
-            --accent-color: #ea4335;
-            --light-gray: #f5f5f5;
-            --dark-gray: #333;
-            --medium-gray: #757575;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --border-radius: 8px;
+            --primary-color: #1a5e63;
+            --secondary-color: #d9a74a;
+            --background-color: #f8f5e6;
+            --text-color: #333;
+            --light-text: #666;
+            --border-color: #ddd;
+            --page-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         
         * {
@@ -46,280 +44,105 @@
         }
         
         body {
+            background-color: var(--background-color);
+            color: var(--text-color);
             line-height: 1.6;
-            color: var(--dark-gray);
-            background-color: #f9f9f9;
+            padding-bottom: 2rem;
         }
         
         header {
-            background-color: white;
-            box-shadow: var(--shadow);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
+            background: linear-gradient(135deg, var(--primary-color), #0d4448);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
         }
         
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--primary-color);
             display: flex;
             align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5rem;
         }
         
-        .logo span {
-            color: var(--accent-color);
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 1.5rem;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: var(--dark-gray);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        nav ul li a:hover {
-            color: var(--primary-color);
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--dark-gray);
-        }
-        
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        
-        .hero {
-            text-align: center;
-            padding: 3rem 1rem;
-            margin-bottom: 2rem;
-            background-color: white;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-        }
-        
-        .hero h1 {
+        .logo-icon {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
+            margin-right: 0.5rem;
         }
         
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--medium-gray);
-            max-width: 700px;
-            margin: 0 auto 2rem;
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
         }
         
-        .converter-container {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        
+        @media (min-width: 992px) {
+            .container {
+                grid-template-columns: 1fr 3fr;
+            }
+        }
+        
+        .controls {
             background-color: white;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            padding: 2rem;
-            margin-bottom: 2rem;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: var(--page-shadow);
         }
         
-        .converter-title {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
+        .control-group {
+            margin-bottom: 1rem;
+        }
+        
+        .control-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
             color: var(--primary-color);
-            text-align: center;
         }
         
-        .file-upload {
-            border: 2px dashed var(--medium-gray);
-            border-radius: var(--border-radius);
-            padding: 2rem;
-            text-align: center;
-            margin-bottom: 2rem;
-            transition: all 0.3s;
-            cursor: pointer;
-            position: relative;
+        select, button {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 1rem;
+            background-color: white;
         }
         
-        .file-upload:hover {
+        select:focus {
+            outline: none;
             border-color: var(--primary-color);
-            background-color: var(--light-gray);
         }
         
-        .file-upload i {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-        
-        .file-upload p {
-            margin-bottom: 1rem;
-        }
-        
-        .file-upload input {
-            display: none;
-        }
-        
-        .btn {
+        button {
             background-color: var(--primary-color);
             color: white;
             border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: var(--border-radius);
-            font-size: 1rem;
-            font-weight: 500;
             cursor: pointer;
-            transition: background-color 0.3s;
-            display: inline-block;
-        }
-        
-        .btn:hover {
-            background-color: #3367d6;
-        }
-        
-        .btn-secondary {
-            background-color: var(--medium-gray);
-        }
-        
-        .btn-secondary:hover {
-            background-color: #5d5d5d;
-        }
-        
-        .btn:disabled {
-            background-color: #cccccc;
-            cursor: not-allowed;
-        }
-        
-        .format-selection {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            justify-content: center;
-        }
-        
-        .format-option {
-            flex: 1;
-            min-width: 150px;
-        }
-        
-        .format-option label {
-            display: block;
-            margin-bottom: 0.5rem;
             font-weight: 500;
+            transition: background-color 0.3s;
         }
         
-        .format-option select {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: var(--border-radius);
-            background-color: white;
-        }
-        
-        .selected-file {
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background-color: var(--light-gray);
-            border-radius: var(--border-radius);
-            display: none;
-        }
-        
-        .selected-file.active {
-            display: block;
-        }
-        
-        .file-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.5rem;
-        }
-        
-        .file-size {
-            color: var(--medium-gray);
-            font-size: 0.9rem;
-        }
-        
-        .progress-container {
-            margin: 2rem 0;
-            display: none;
-        }
-        
-        .progress-container.active {
-            display: block;
-        }
-        
-        .progress-bar {
-            height: 10px;
-            background-color: var(--light-gray);
-            border-radius: 5px;
-            overflow: hidden;
-            margin-bottom: 0.5rem;
-        }
-        
-        .progress {
-            height: 100%;
-            background-color: var(--secondary-color);
-            width: 0%;
-            transition: width 0.3s;
-        }
-        
-        .download-section {
-            text-align: center;
-            padding: 2rem;
-            background-color: var(--light-gray);
-            border-radius: var(--border-radius);
-            margin-top: 2rem;
-            display: none;
-        }
-        
-        .download-section.active {
-            display: block;
-        }
-        
-        .error-message {
-            color: var(--accent-color);
-            background-color: #ffeeee;
-            padding: 1rem;
-            border-radius: var(--border-radius);
-            margin: 1rem 0;
-            display: none;
-        }
-        
-        .error-message.active {
-            display: block;
+        button:hover {
+            background-color: #0d4448;
         }
         
         .ad-container {
-            margin: 2rem 0;
-            text-align: center;
             background-color: white;
+            border-radius: 8px;
             padding: 1rem;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
+            margin: 1.5rem 0;
+            text-align: center;
+            box-shadow: var(--page-shadow);
             min-height: 90px;
             display: flex;
             align-items: center;
@@ -327,700 +150,497 @@
         }
         
         .ad-label {
+            color: var(--light-text);
             font-size: 0.8rem;
-            color: var(--medium-gray);
-            text-align: center;
             margin-bottom: 0.5rem;
         }
         
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
+        .ad-placeholder {
+            color: var(--light-text);
+            padding: 2rem;
+            background-color: #f9f9f9;
+            border: 1px dashed var(--border-color);
+            border-radius: 4px;
+            width: 100%;
         }
         
-        .feature-card {
+        .viewer-container {
             background-color: white;
-            border-radius: var(--border-radius);
+            border-radius: 8px;
             padding: 1.5rem;
-            box-shadow: var(--shadow);
+            box-shadow: var(--page-shadow);
+            min-height: 500px;
+            position: relative;
+        }
+        
+        #viewer-controls {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        #viewer-controls button {
+            width: auto;
+            padding: 0.5rem 1rem;
+        }
+        
+        #page-navigation {
+            display: flex;
+            align-items: center;
+            margin: 0 1rem;
+        }
+        
+        #current-page {
+            width: 50px;
             text-align: center;
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
         }
         
-        .feature-card i {
-            font-size: 2.5rem;
+        #quran-content {
+            width: 100%;
+            padding: 1rem;
+            line-height: 2;
+            font-size: 1.2rem;
+            text-align: right;
+            direction: rtl;
+            min-height: 400px;
+            max-height: 70vh;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: linear-gradient(to bottom, #f9f8f2, #f5f3ea);
+        }
+        
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade New', serif;
+            font-size: 1.8rem;
+            line-height: 2.5;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        
+        .translation {
+            font-style: italic;
+            color: var(--light-text);
+            border-top: 1px dashed var(--border-color);
+            padding-top: 1rem;
+            margin-top: 1rem;
+            text-align: left;
+            direction: ltr;
+        }
+        
+        .surah-title {
+            text-align: center;
             color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+        
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            flex-direction: column;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--primary-color);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
             margin-bottom: 1rem;
         }
         
-        .feature-card h3 {
-            margin-bottom: 1rem;
-            color: var(--dark-gray);
-        }
-        
-        .feature-card p {
-            color: var(--medium-gray);
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
         
         footer {
-            background-color: var(--dark-gray);
+            background-color: var(--primary-color);
             color: white;
-            padding: 3rem 1rem;
             text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
         }
         
-        .footer-container {
+        .footer-content {
             max-width: 1200px;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            text-align: left;
         }
         
-        .footer-column h3 {
-            margin-bottom: 1.5rem;
-            font-size: 1.2rem;
-        }
-        
-        .footer-column ul {
-            list-style: none;
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             margin-bottom: 1rem;
         }
         
-        .footer-column ul li {
-            margin-bottom: 0.75rem;
-        }
-        
-        .footer-column ul li a {
-            color: #ccc;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-column ul li a:hover {
+        .footer-nav a {
             color: white;
-        }
-        
-        .copyright {
-            margin-top: 2rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid #444;
-            color: #aaa;
-            font-size: 0.9rem;
-        }
-        
-        .download-link {
-            display: none;
-        }
-        
-        .breadcrumb {
-            margin: 1rem 0;
-            font-size: 0.9rem;
-            color: var(--medium-gray);
-        }
-        
-        .breadcrumb a {
-            color: var(--primary-color);
+            margin: 0 1rem;
             text-decoration: none;
         }
         
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            nav {
-                width: 100%;
-                margin-top: 1rem;
-                display: none;
-            }
-            
-            nav.active {
-                display: block;
-            }
-            
-            nav ul {
-                flex-direction: column;
-            }
-            
-            nav ul li {
-                margin: 0.5rem 0;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .format-selection {
-                flex-direction: column;
-            }
-            
-            .format-option {
-                min-width: 100%;
-            }
-            
-            .file-info {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.5rem;
-            }
-            
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 767px) {
             .ad-container {
                 min-height: 50px;
+            }
+            
+            .ad-placeholder {
+                padding: 1rem;
+            }
+            
+            #viewer-controls {
+                flex-wrap: wrap;
+            }
+            
+            .arabic-text {
+                font-size: 1.5rem;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo">
-                <i class="fas fa-file-alt" aria-hidden="true"></i>
-                <span>Doc</span>Convert AI
-            </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
-                <i class="fas fa-bars" aria-hidden="true"></i>
-            </button>
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#supported-formats">Supported Formats</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <div class="logo-icon">📖</div>
+            <h1>Quran PDF Viewer</h1>
         </div>
+        <p>Read the Holy Quran online with multiple translations</p>
     </header>
     
-    <main>
-        <!-- Breadcrumb for better SEO -->
-        <div class="breadcrumb">
-            <a href="#">Home</a> > <span>Document Converter</span>
-        </div>
-        
-        <section class="hero">
-            <h1>AI-Powered Document Conversion</h1>
-            <p>Convert any document format to any other format while preserving layout, formatting, and accuracy. Our advanced AI technology ensures your documents look perfect every time.</p>
-        </section>
-        
-        <!-- Top Ad Banner -->
-        <div class="ad-label">Advertisement</div>
-        <div class="ad-container" id="ad-top">
-            <!-- Ad placeholder - replace with actual ad code -->
-            <p>Advertisement space</p>
-        </div>
-        
-        <section class="converter-container">
-            <h2 class="converter-title">Document Converter</h2>
-            
-            <div class="file-upload" id="fileUpload" role="button" aria-describedby="fileUploadDesc">
-                <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
-                <p>Drag & drop your file here or click to browse</p>
-                <p class="small" id="fileUploadDesc">Supported formats: PDF, DOCX, PPTX, XLSX, TXT, JPG, PNG, and more. Maximum file size: 100MB</p>
-                <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.txt,.jpg,.jpeg,.png,.gif" aria-label="Select file to convert">
-                <button class="btn">Select File</button>
-            </div>
-            
-            <div class="selected-file" id="selectedFile">
-                <div class="file-info">
-                    <p><strong>Selected file:</strong> <span id="fileName">No file selected</span></p>
-                    <span class="file-size" id="fileSize"></span>
-                </div>
-                <button class="btn btn-secondary" id="changeFileBtn">Change File</button>
-            </div>
-            
-            <div class="error-message" id="errorMessage"></div>
-            
-            <div class="format-selection">
-                <div class="format-option">
-                    <label for="inputFormat">Input Format</label>
-                    <select id="inputFormat" disabled aria-label="Input document format">
-                        <option value="">Auto-detect</option>
-                        <option value="pdf">PDF</option>
-                        <option value="docx">Word (DOCX)</option>
-                        <option value="pptx">PowerPoint (PPTX)</option>
-                        <option value="xlsx">Excel (XLSX)</option>
-                        <option value="txt">Plain Text (TXT)</option>
-                        <option value="jpg">Image (JPG)</option>
-                        <option value="png">Image (PNG)</option>
-                        <option value="html">HTML</option>
-                        <option value="rtf">Rich Text (RTF)</option>
-                        <option value="odt">OpenDocument Text</option>
+    <div class="container">
+        <div class="sidebar">
+            <div class="controls">
+                <div class="control-group">
+                    <label for="surah-select">Surah Selection</label>
+                    <select id="surah-select">
+                        <option value="1">Al-Fatiha (The Opening)</option>
+                        <option value="2">Al-Baqarah (The Cow)</option>
+                        <option value="36">Ya-Sin</option>
+                        <option value="55">Ar-Rahman (The Beneficent)</option>
+                        <option value="67">Al-Mulk (The Sovereignty)</option>
+                        <option value="87">Al-Ala (The Most High)</option>
+                        <option value="93">Ad-Duha (The Morning Hours)</option>
+                        <option value="94">Ash-Sharh (The Relief)</option>
+                        <option value="95">At-Tin (The Fig)</option>
+                        <option value="96">Al-Alaq (The Clot)</option>
+                        <option value="97">Al-Qadr (The Power)</option>
+                        <option value="98">Al-Bayyinah (The Clear Proof)</option>
+                        <option value="99">Az-Zalzalah (The Earthquake)</option>
+                        <option value="100">Al-Adiyat (The Courser)</option>
+                        <option value="101">Al-Qariah (The Calamity)</option>
+                        <option value="102">At-Takathur (The Competition)</option>
+                        <option value="103">Al-Asr (The Time)</option>
+                        <option value="104">Al-Humazah (The Slanderer)</option>
+                        <option value="105">Al-Fil (The Elephant)</option>
+                        <option value="106">Quraish</option>
+                        <option value="107">Al-Maun (The Assistance)</option>
+                        <option value="108">Al-Kawthar (The Abundance)</option>
+                        <option value="109">Al-Kafirun (The Disbelievers)</option>
+                        <option value="110">An-Nasr (The Victory)</option>
+                        <option value="111">Al-Masad (The Palm Fiber)</option>
+                        <option value="112">Al-Ikhlas (The Sincerity)</option>
+                        <option value="113">Al-Falaq (The Daybreak)</option>
+                        <option value="114">An-Nas (The Mankind)</option>
                     </select>
                 </div>
                 
-                <div class="format-option">
-                    <label for="outputFormat">Convert To</label>
-                    <select id="outputFormat" aria-label="Output document format">
-                        <option value="pdf">PDF</option>
-                        <option value="docx">Word (DOCX)</option>
-                        <option value="pptx">PowerPoint (PPTX)</option>
-                        <option value="xlsx">Excel (XLSX)</option>
-                        <option value="txt">Plain Text (TXT)</option>
-                        <option value="jpg">Image (JPG)</option>
-                        <option value="png">Image (PNG)</option>
-                        <option value="html">HTML</option>
-                        <option value="rtf">Rich Text (RTF)</option>
-                        <option value="odt">OpenDocument Text</option>
-                    </select>
-                </div>
-            </div>
-            
-            <!-- Additional conversion options -->
-            <div class="format-selection">
-                <div class="format-option">
-                    <label for="qualityOption">Quality Setting</label>
-                    <select id="qualityOption" aria-label="Conversion quality setting">
-                        <option value="high">High (Best Quality)</option>
-                        <option value="medium" selected>Medium (Recommended)</option>
-                        <option value="low">Low (Smaller File Size)</option>
+                <div class="control-group">
+                    <label for="language">Translation</label>
+                    <select id="language">
+                        <option value="english">English - Sahih International</option>
+                        <option value="arabic">Arabic Only</option>
+                        <option value="urdu">Urdu Translation</option>
+                        <option value="french">French Translation</option>
+                        <option value="spanish">Spanish Translation</option>
                     </select>
                 </div>
                 
-                <div class="format-option">
-                    <label for="layoutOption">Layout Preservation</label>
-                    <select id="layoutOption" aria-label="Layout preservation option">
-                        <option value="full" selected>Full Layout Preservation</option>
-                        <option value="minimal">Minimal (Text Only)</option>
-                        <option value="custom">Custom Settings</option>
+                <div class="control-group">
+                    <label for="font-size">Text Size</label>
+                    <select id="font-size">
+                        <option value="small">Small</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="large">Large</option>
                     </select>
                 </div>
+                
+                <button id="load-selection">Load Selection</button>
             </div>
             
-            <div class="text-center">
-                <button class="btn" id="convertBtn" disabled>Convert Document</button>
-            </div>
-            
-            <div class="progress-container" id="progressContainer">
-                <p>Converting your document...</p>
-                <div class="progress-bar">
-                    <div class="progress" id="progressBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p id="progressText">0% complete</p>
-            </div>
-            
-            <div class="download-section" id="downloadSection">
-                <h3>Your document is ready!</h3>
-                <p>Conversion completed successfully with layout preserved.</p>
-                <button class="btn" id="downloadBtn">
-                    <i class="fas fa-download" aria-hidden="true"></i> Download Converted File
-                </button>
-                <!-- Hidden download link that will be created dynamically -->
-                <a id="downloadLink" class="download-link" download>Download</a>
-                <div id="pdfViewer" style="display: none; margin-top: 20px; border: 1px solid #ddd; padding: 10px; background: white;">
-                    <h4>PDF Preview</h4>
-                    <iframe id="pdfFrame" width="100%" height="500px" style="border: none;"></iframe>
-                    <p class="small" style="margin-top: 10px; color: #666;">
-                        Note: This is a preview of your converted PDF. Use the download button above to save the file.
-                    </p>
+            <div class="ad-container">
+                <div>
+                    <div class="ad-label">Advertisement</div>
+                    <div class="ad-placeholder">
+                        AdSense Unit ID: <strong>quran-sidebar-ad</strong>
+                    </div>
                 </div>
             </div>
-        </section>
-        
-        <!-- Middle Ad Banner -->
-        <div class="ad-label">Advertisement</div>
-        <div class="ad-container" id="ad-middle">
-            <!-- Ad placeholder - replace with actual ad code -->
-            <p>Advertisement space</p>
+            
+            <div class="ad-container">
+                <div>
+                    <div class="ad-label">Advertisement</div>
+                    <div class="ad-placeholder">
+                        AdSense Unit ID: <strong>quran-sidebar-ad-2</strong>
+                    </div>
+                </div>
+            </div>
         </div>
         
-        <section class="features" id="features">
-            <div class="feature-card">
-                <i class="fas fa-magic" aria-hidden="true"></i>
-                <h3>Layout Preservation</h3>
-                <p>Our AI technology maintains the original layout, fonts, and formatting of your documents during conversion.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-bolt" aria-hidden="true"></i>
-                <h3>Fast Processing</h3>
-                <p>Convert documents in seconds with our high-speed cloud processing infrastructure.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-lock" aria-hidden="true"></i>
-                <h3>Secure Conversion</h3>
-                <p>Your files are processed securely and deleted automatically after conversion for your privacy.</p>
-            </div>
-        </section>
-        
-        <section id="how-it-works" style="margin: 3rem 0;">
-            <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">How It Works</h2>
-            <div style="background-color: white; padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow);">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
-                    <div style="text-align: center;">
-                        <div style="background-color: var(--light-gray); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--primary-color); font-weight: bold; font-size: 1.5rem;">1</div>
-                        <h3 style="margin-bottom: 1rem;">Upload Your File</h3>
-                        <p>Drag and drop your document or click to browse files on your device.</p>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="background-color: var(--light-gray); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--primary-color); font-weight: bold; font-size: 1.5rem;">2</div>
-                        <h3 style="margin-bottom: 1rem;">Select Output Format</h3>
-                        <p>Choose the format you want to convert your document to from our wide selection.</p>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="background-color: var(--light-gray); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--primary-color); font-weight: bold; font-size: 1.5rem;">3</div>
-                        <h3 style="margin-bottom: 1rem;">Download Result</h3>
-                        <p>Get your perfectly converted document in just seconds, ready to download.</p>
+        <div class="main-content">
+            <div class="ad-container">
+                <div>
+                    <div class="ad-label">Advertisement</div>
+                    <div class="ad-placeholder">
+                        AdSense Unit ID: <strong>quran-top-ad</strong>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <!-- Bottom Ad Banner -->
-        <div class="ad-label">Advertisement</div>
-        <div class="ad-container" id="ad-bottom">
-            <!-- Ad placeholder - replace with actual ad code -->
-            <p>Advertisement space</p>
+            
+            <div class="viewer-container">
+                <div id="viewer-controls">
+                    <button id="prev-page">Previous</button>
+                    <div id="page-navigation">
+                        <span>Surah </span>
+                        <input type="number" id="current-page" value="1" min="1" max="114">
+                    </div>
+                    <button id="next-page">Next</button>
+                    <button id="font-increase">A+</button>
+                    <button id="font-decrease">A-</button>
+                </div>
+                
+                <div id="quran-content">
+                    <div class="surah-title">Al-Fatiha (The Opening)</div>
+                    <div class="arabic-text">
+                        بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ (1) الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ (2) الرَّحْمَٰنِ الرَّحِيمِ (3) مَالِكِ يَوْمِ الدِّينِ (4) إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ (5) اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ (6) صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ (7)
+                    </div>
+                    <div class="translation">
+                        In the name of Allah, the Entirely Merciful, the Especially Merciful. (1) [All] praise is [due] to Allah, Lord of the worlds - (2) The Entirely Merciful, the Especially Merciful - (3) Sovereign of the Day of Recompense. (4) It is You we worship and You we ask for help. (5) Guide us to the straight path - (6) The path of those upon whom You have bestowed favor, not of those who have earned [Your] anger or of those who are astray. (7)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ad-container">
+                <div>
+                    <div class="ad-label">Advertisement</div>
+                    <div class="ad-placeholder">
+                        AdSense Unit ID: <strong>quran-bottom-ad</strong>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <section id="supported-formats" style="margin: 3rem 0;">
-            <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">Supported Formats</h2>
-            <div style="background-color: white; padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow);">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
-                    <div>
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Input Formats</h3>
-                        <ul style="list-style-type: none;">
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-pdf" style="color: var(--accent-color); margin-right: 0.5rem;" aria-hidden="true"></i> PDF</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-word" style="color: #2b579a; margin-right: 0.5rem;" aria-hidden="true"></i> DOC, DOCX</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-powerpoint" style="color: #d24726; margin-right: 0.5rem;" aria-hidden="true"></i> PPT, PPTX</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-excel" style="color: #217346; margin-right: 0.5rem;" aria-hidden="true"></i> XLS, XLSX</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-alt" style="color: var(--medium-gray); margin-right: 0.5rem;" aria-hidden="true"></i> TXT</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-image" style="color: #e67e22; margin-right: 0.5rem;" aria-hidden="true"></i> JPG, PNG, GIF</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-code" style="color: #f1c40f; margin-right: 0.5rem;" aria-hidden="true"></i> HTML</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-alt" style="color: #9b59b6; margin-right: 0.5rem;" aria-hidden="true"></i> RTF</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-alt" style="color: #34495e; margin-right: 0.5rem;" aria-hidden="true"></i> ODT</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Output Formats</h3>
-                        <ul style="list-style-type: none;">
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-pdf" style="color: var(--accent-color); margin-right: 0.5rem;" aria-hidden="true"></i> PDF</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-word" style="color: #2b579a; margin-right: 0.5rem;" aria-hidden="true"></i> DOCX</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-powerpoint" style="color: #d24726; margin-right: 0.5rem;" aria-hidden="true"></i> PPTX</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-excel" style="color: #217346; margin-right: 0.5rem;" aria-hidden="true"></i> XLSX</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-alt" style="color: var(--medium-gray); margin-right: 0.5rem;" aria-hidden="true"></i> TXT</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-image" style="color: #e67e22; margin-right: 0.5rem;" aria-hidden="true"></i> JPG, PNG</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-code" style="color: #f1c40f; margin-right: 0.5rem;" aria-hidden="true"></i> HTML</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-alt" style="color: #9b59b6; margin-right: 0.5rem;" aria-hidden="true"></i> RTF</li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;"><i class="fas fa-file-alt" style="color: #34495e; margin-right: 0.5rem;" aria-hidden="true"></i> ODT</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    </div>
     
     <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>Document Converter</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#supported-formats">Supported Formats</a></li>
-                </ul>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
             </div>
-            <div class="footer-column">
-                <h3>Resources</h3>
-                <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">API Documentation</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Company</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-column" id="contact">
-                <h3>Connect With Us</h3>
-                <ul>
-                    <li><a href="#"><i class="fab fa-twitter" style="margin-right: 0.5rem;" aria-hidden="true"></i> Twitter</a></li>
-                    <li><a href="#"><i class="fab fa-facebook" style="margin-right: 0.5rem;" aria-hidden="true"></i> Facebook</a></li>
-                    <li><a href="#"><i class="fab fa-linkedin" style="margin-right: 0.5rem;" aria-hidden="true"></i> LinkedIn</a></li>
-                    <li><a href="#"><i class="fab fa-github" style="margin-right: 0.5rem;" aria-hidden="true"></i> GitHub</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2023 Document Converter AI. All rights reserved.</p>
+            <p>&copy; 2023 Quran PDF Viewer. All rights reserved.</p>
         </div>
     </footer>
-    
+
     <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mainNav = document.getElementById('mainNav');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-            const isExpanded = mainNav.classList.contains('active');
-            mobileMenuBtn.setAttribute('aria-expanded', isExpanded);
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (mainNav.classList.contains('active') && 
-                !e.target.closest('#mainNav') && 
-                !e.target.closest('#mobileMenuBtn')) {
-                mainNav.classList.remove('active');
-                mobileMenuBtn.setAttribute('aria-expanded', 'false');
-            }
-        });
-        
-        // File upload functionality
-        const fileInput = document.getElementById('fileInput');
-        const fileUpload = document.getElementById('fileUpload');
-        const selectedFile = document.getElementById('selectedFile');
-        const fileName = document.getElementById('fileName');
-        const fileSize = document.getElementById('fileSize');
-        const changeFileBtn = document.getElementById('changeFileBtn');
-        const inputFormat = document.getElementById('inputFormat');
-        const convertBtn = document.getElementById('convertBtn');
-        const errorMessage = document.getElementById('errorMessage');
-        const downloadLink = document.getElementById('downloadLink');
-        const pdfViewer = document.getElementById('pdfViewer');
-        const pdfFrame = document.getElementById('pdfFrame');
-        const MAX_FILE_SIZE = 100 * 1024 * 1024; // 100MB
-        
-        // Store the uploaded file for conversion
-        let uploadedFile = null;
-        
-        fileUpload.addEventListener('click', () => {
-            fileInput.click();
-        });
-        
-        fileInput.addEventListener('change', (e) => {
-            if (e.target.files.length > 0) {
-                handleFileSelection(e.target.files[0]);
-            }
-        });
-        
-        function handleFileSelection(file) {
-            uploadedFile = file;
-            
-            // Validate file size
-            if (file.size > MAX_FILE_SIZE) {
-                showError(`File size exceeds the maximum limit of 100MB. Your file is ${formatFileSize(file.size)}.`);
-                resetFileInput();
-                return;
-            }
-            
-            // Validate file type
-            const fileExt = file.name.split('.').pop().toLowerCase();
-            const allowedExtensions = ['pdf', 'doc', 'docx', 'ppt', 'pptx', 'xls', 'xlsx', 'txt', 'jpg', 'jpeg', 'png', 'gif', 'html', 'htm', 'rtf', 'odt'];
-            
-            if (!allowedExtensions.includes(fileExt)) {
-                showError(`File type not supported. Please upload one of the following: ${allowedExtensions.join(', ')}`);
-                resetFileInput();
-                return;
-            }
-            
-            // If valid, proceed
-            hideError();
-            fileName.textContent = file.name;
-            fileSize.textContent = formatFileSize(file.size);
-            selectedFile.classList.add('active');
-            convertBtn.disabled = false;
-            
-            // Try to detect file format
-            const formatOptions = {
-                'pdf': 'pdf',
-                'doc': 'docx',
-                'docx': 'docx',
-                'ppt': 'pptx',
-                'pptx': 'pptx',
-                'xls': 'xlsx',
-                'xlsx': 'xlsx',
-                'txt': 'txt',
-                'jpg': 'jpg',
-                'jpeg': 'jpg',
-                'png': 'png',
-                'gif': 'gif',
-                'html': 'html',
-                'htm': 'html',
-                'rtf': 'rtf',
-                'odt': 'odt'
-            };
-            
-            if (formatOptions[fileExt]) {
-                inputFormat.value = formatOptions[fileExt];
-            } else {
-                inputFormat.value = '';
-            }
-        }
-        
-        function formatFileSize(bytes) {
-            if (bytes === 0) return '0 Bytes';
-            const k = 1024;
-            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
-            const i = Math.floor(Math.log(bytes) / Math.log(k));
-            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
-        }
-        
-        function showError(message) {
-            errorMessage.textContent = message;
-            errorMessage.classList.add('active');
-        }
-        
-        function hideError() {
-            errorMessage.classList.remove('active');
-        }
-        
-        function resetFileInput() {
-            fileInput.value = '';
-            uploadedFile = null;
-            selectedFile.classList.remove('active');
-            convertBtn.disabled = true;
-            inputFormat.value = '';
-        }
-        
-        changeFileBtn.addEventListener('click', resetFileInput);
-        
-        // Drag and drop functionality
-        fileUpload.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            fileUpload.style.borderColor = 'var(--primary-color)';
-            fileUpload.style.backgroundColor = 'var(--light-gray)';
-        });
-        
-        fileUpload.addEventListener('dragleave', () => {
-            fileUpload.style.borderColor = 'var(--medium-gray)';
-            fileUpload.style.backgroundColor = 'white';
-        });
-        
-        fileUpload.addEventListener('drop', (e) => {
-            e.preventDefault();
-            fileUpload.style.borderColor = 'var(--medium-gray)';
-            fileUpload.style.backgroundColor = 'white';
-            
-            if (e.dataTransfer.files.length > 0) {
-                handleFileSelection(e.dataTransfer.files[0]);
-            }
-        });
-        
-        // Conversion functionality
-        const progressContainer = document.getElementById('progressContainer');
-        const progressBar = document.getElementById('progressBar');
-        const progressText = document.getElementById('progressText');
-        const downloadSection = document.getElementById('downloadSection');
-        const downloadBtn = document.getElementById('downloadBtn');
-        
-        convertBtn.addEventListener('click', () => {
-            // Validate output format selection
-            const outputFormatValue = document.getElementById('outputFormat').value;
-            if (!outputFormatValue) {
-                showError('Please select an output format');
-                return;
-            }
-            
-            // Hide any previous errors
-            hideError();
-            
-            // Show progress
-            progressContainer.classList.add('active');
-            
-            // Simulate conversion progress
-            let progress = 0;
-            const interval = setInterval(() => {
-                progress += Math.random() * 10;
-                if (progress > 100) progress = 100;
-                
-                progressBar.style.width = `${progress}%`;
-                progressBar.setAttribute('aria-valuenow', Math.round(progress));
-                progressText.textContent = `${Math.round(progress)}% complete`;
-                
-                if (progress === 100) {
-                    clearInterval(interval);
-                    setTimeout(() => {
-                        progressContainer.classList.remove('active');
-                        downloadSection.classList.add('active');
-                        
-                        // Prepare the download
-                        prepareDownload(uploadedFile, outputFormatValue);
-                        
-                        // Scroll to download section
-                        downloadSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                    }, 500);
+        // Sample Quran data (in a real implementation, this would be more extensive)
+        const quranData = {
+            "1": {
+                "name": "Al-Fatiha",
+                "translation": "The Opening",
+                "verses": [
+                    "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+                    "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+                    "الرَّحْمَٰنِ الرَّحِيمِ",
+                    "مَالِكِ يَوْمِ الدِّينِ",
+                    "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+                    "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+                    "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ"
+                ],
+                "translations": {
+                    "english": [
+                        "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+                        "[All] praise is [due] to Allah, Lord of the worlds -",
+                        "The Entirely Merciful, the Especially Merciful -",
+                        "Sovereign of the Day of Recompense.",
+                        "It is You we worship and You we ask for help.",
+                        "Guide us to the straight path -",
+                        "The path of those upon whom You have bestowed favor, not of those who have earned [Your] anger or of those who are astray."
+                    ]
                 }
-            }, 300);
-        });
-        
-        function prepareDownload(file, outputFormat) {
-            // Set up the download button
-            downloadBtn.onclick = () => {
-                // In a real implementation, this would be the converted file
-                // For real purposes, we'll create a download of the original file with a new extension
-                
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    // Create a blob from the file data
-                    const blob = new Blob([e.target.result], { type: 'application/octet-stream' });
-                    
-                    // Create a download URL
-                    const url = URL.createObjectURL(blob);
-                    
-                    // Set up the download link
-                    const originalName = file.name.substring(0, file.name.lastIndexOf('.')) || file.name;
-                    downloadLink.href = url;
-                    downloadLink.download = `${originalName}.${outputFormat}`;
-                    
-                    // Trigger the download
-                    downloadLink.click();
-                    
-                    // Clean up
-                    setTimeout(() => URL.revokeObjectURL(url), 100);
-                };
-                reader.readAsArrayBuffer(file);
-            };
-            
-            // If converting to PDF, show a preview
-            if (outputFormat === 'pdf') {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    const blob = new Blob([e.target.result], { type: 'application/pdf' });
-                    const url = URL.createObjectURL(blob);
-                    pdfFrame.src = url;
-                    pdfViewer.style.display = 'bolck';
-                };
-                reader.readAsArrayBuffer(file);
-            } else {
-                pdfViewer.style.display = 'none';
+            },
+            "36": {
+                "name": "Ya-Sin",
+                "translation": "Ya Sin",
+                "verses": [
+                    "يس (1) وَالْقُرْآنِ الْحَكِيمِ (2) إِنَّكَ لَمِنَ الْمُرْسَلِينَ (3) عَلَىٰ صِرَاطٍ مُسْتَقِيمٍ (4)",
+                    "تَنْزِيلَ الْعَزِيزِ الرَّحِيمِ (5) لِتُنْذِرَ قَوْمًا مَا أُنْذِرَ آبَاؤُهُمْ فَهُمْ غَافِلُونَ (6)",
+                    "لَقَدْ حَقَّ الْقَوْلُ عَلَىٰ أَكْثَرِهِمْ فَهُمْ لَا يُؤْمِنُونَ (7)",
+                    "إِنَّا جَعَلْنَا فِي أَعْنَاقِهِمْ أَغْلَالًا فَهِيَ إِلَى الْأَذْقَانِ فَهُمْ مُقْمَحُونَ (8)"
+                ],
+                "translations": {
+                    "english": [
+                        "Ya, Seen. (1) By the wise Qur'an. (2) Indeed you, [O Muhammad], are from among the messengers, (3) On a straight path. (4)",
+                        "[This is] a revelation of the Exalted in Might, the Merciful, (5) That you may warn a people whose forefathers were not warned, so they are unaware. (6)",
+                        "Already the word has come into effect upon most of them, so they do not believe. (7)",
+                        "Indeed, We have put shackles on their necks, and they are to their chins, so they are with heads [kept] aloft. (8)"
+                    ]
+                }
+            },
+            "55": {
+                "name": "Ar-Rahman",
+                "translation": "The Beneficent",
+                "verses": [
+                    "الرَّحْمَٰنُ (1) عَلَّمَ الْقُرْآنَ (2) خَلَقَ الْإِنْسَانَ (3) عَلَّمَهُ الْبَيَانَ (4)",
+                    "الشَّمْسُ وَالْقَمَرُ بِحُسْبَانٍ (5) وَالنَّجْمُ وَالشَّجَرُ يَسْجُدَانِ (6)",
+                    "وَالسَّمَاءَ رَفَعَهَا وَوَضَعَ الْمِيزَانَ (7) أَلَّا تَطْغَوْا فِي الْمِيزَانِ (8)",
+                    "وَأَقِيمُوا الْوَزْنَ بِالْقِسْطِ وَلَا تُخْسِرُوا الْمِيزَانَ (9)"
+                ],
+                "translations": {
+                    "english": [
+                        "The Most Merciful (1) Taught the Qur'an, (2) Created man, (3) [And] taught him eloquence. (4)",
+                        "The sun and the moon [move] by precise calculation, (5) And the stars and trees prostrate. (6)",
+                        "And the heaven He raised and imposed the balance (7) That you not transgress within the balance. (8)",
+                        "And establish weight in justice and do not make deficient the balance. (9)"
+                    ]
+                }
             }
+        };
+
+        // Initialize the viewer
+        function initViewer() {
+            const surahSelect = document.getElementById('surah-select');
+            const languageSelect = document.getElementById('language');
+            const loadButton = document.getElementById('load-selection');
+            const prevButton = document.getElementById('prev-page');
+            const nextButton = document.getElementById('next-page');
+            const currentPage = document.getElementById('current-page');
+            const fontIncrease = document.getElementById('font-increase');
+            const fontDecrease = document.getElementById('font-decrease');
+            const quranContent = document.getElementById('quran-content');
+            
+            // Load initial content
+            loadSurah(1, 'english');
+            
+            // Event listeners
+            loadButton.addEventListener('click', function() {
+                const surah = surahSelect.value;
+                const language = languageSelect.value;
+                loadSurah(surah, language);
+                currentPage.value = surah;
+            });
+            
+            prevButton.addEventListener('click', function() {
+                let current = parseInt(currentPage.value);
+                if (current > 1) {
+                    current--;
+                    currentPage.value = current;
+                    loadSurah(current, languageSelect.value);
+                }
+            });
+            
+            nextButton.addEventListener('click', function() {
+                let current = parseInt(currentPage.value);
+                if (current < 114) {
+                    current++;
+                    currentPage.value = current;
+                    loadSurah(current, languageSelect.value);
+                }
+            });
+            
+            currentPage.addEventListener('change', function() {
+                let surah = parseInt(this.value);
+                if (surah < 1) surah = 1;
+                if (surah > 114) surah = 114;
+                this.value = surah;
+                loadSurah(surah, languageSelect.value);
+            });
+            
+            fontIncrease.addEventListener('click', function() {
+                const arabicText = document.querySelector('.arabic-text');
+                const currentSize = parseFloat(window.getComputedStyle(arabicText).fontSize);
+                arabicText.style.fontSize = (currentSize + 2) + 'px';
+            });
+            
+            fontDecrease.addEventListener('click', function() {
+                const arabicText = document.querySelector('.arabic-text');
+                const currentSize = parseFloat(window.getComputedStyle(arabicText).fontSize);
+                if (currentSize > 16) {
+                    arabicText.style.fontSize = (currentSize - 2) + 'px';
+                }
+            });
         }
         
-        // Initialize the page
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Document Converter AI is ready!');
+        // Load a surah
+        function loadSurah(surah, language) {
+            const quranContent = document.getElementById('quran-content');
             
-            // Track conversion events for analytics (SEO optimization)
-            convertBtn.addEventListener('click', function() {
-                // In a real implementation, send this data to Google Analytics
-                console.log('Conversion started:', {
-                    inputFormat: inputFormat.value,
-                    outputFormat: document.getElementById('outputFormat').value,
-                    quality: document.getElementById('qualityOption').value,
-                    layout: document.getElementById('layoutOption').value
-                });
-            });
-        });
+            // Show loading state
+            quranContent.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading Surah ${surah}...</p>
+                </div>
+            `;
+            
+            // Simulate loading delay
+            setTimeout(() => {
+                if (quranData[surah]) {
+                    const surahInfo = quranData[surah];
+                    let versesHTML = '';
+                    
+                    // Add Arabic verses
+                    surahInfo.verses.forEach((verse, index) => {
+                        versesHTML += `<div class="verse">${verse}</div>`;
+                    });
+                    
+                    // Generate HTML content
+                    const contentHTML = `
+                        <div class="surah-title">${surahInfo.name} (${surahInfo.translation})</div>
+                        <div class="arabic-text">
+                            ${versesHTML}
+                        </div>
+                        ${language !== 'arabic' ? `
+                        <div class="translation">
+                            ${surahInfo.translations[language] ? surahInfo.translations[language].join('<br>') : 'Translation not available'}
+                        </div>
+                        ` : ''}
+                    `;
+                    
+                    quranContent.innerHTML = contentHTML;
+                } else {
+                    // Fallback content for surahs not in our sample data
+                    quranContent.innerHTML = `
+                        <div class="surah-title">Surah ${surah}</div>
+                        <div class="loading">
+                            <p>This surah is not available in the demo. In a full implementation, all 114 surahs would be available.</p>
+                            <p><small>To view the complete Quran, please check back later or use a complete Quran website.</small></p>
+                        </div>
+                    `;
+                }
+            }, 500);
+        }
+        
+        // Initialize the viewer when the page loads
+        window.onload = function() {
+            initViewer();
+        };
     </script>
 </body>
 </html>
