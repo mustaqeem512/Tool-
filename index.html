@@ -3,37 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quran PDF Viewer - Read Holy Quran Online</title>
-    <meta name="description" content="Read the Holy Quran online with our responsive PDF viewer. Select different translations and editions for enhanced spiritual study.">
-    <meta name="keywords" content="Quran, PDF, online Quran, Holy Quran, Islamic book, Muslim, read Quran">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com/quran-pdf">
-    <meta property="og:title" content="Online Quran PDF Viewer">
-    <meta property="og:description" content="Read the Holy Quran online with our responsive PDF viewer with multiple translations.">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://example.com/quran-pdf">
-    <meta property="twitter:title" content="Online Quran PDF Viewer">
-    <meta property="twitter:description" content="Read the Holy Quran online with our responsive PDF viewer with multiple translations.">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://example.com/quran-pdf">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
-    
+    <title>AI Keyword Research Tool | SEO Optimization</title>
+    <meta name="description" content="Advanced AI-powered keyword research tool for SEO optimization and content strategy">
+    <meta name="keywords" content="keyword research, SEO tool, AI keyword analysis, content optimization">
     <style>
         :root {
-            --primary-color: #1a5e63;
-            --secondary-color: #d9a74a;
-            --background-color: #f8f5e6;
-            --text-color: #333;
-            --light-text: #666;
-            --border-color: #ddd;
-            --page-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            --primary: #4361ee;
+            --secondary: #3a0ca3;
+            --accent: #7209b7;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4cc9f0;
+            --warning: #f72585;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
         }
         
         * {
@@ -44,603 +27,559 @@
         }
         
         body {
-            background-color: var(--background-color);
-            color: var(--text-color);
+            background-color: var(--light);
+            color: var(--dark);
             line-height: 1.6;
-            padding-bottom: 2rem;
-        }
-        
-        header {
-            background: linear-gradient(135deg, var(--primary-color), #0d4448);
-            color: white;
-            padding: 1rem;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 1.5rem;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 0.5rem;
-        }
-        
-        .logo-icon {
-            font-size: 2.5rem;
-            margin-right: 0.5rem;
-        }
-        
-        .logo h1 {
-            font-size: 1.8rem;
-            font-weight: 600;
         }
         
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 1rem;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
+            padding: 0 20px;
         }
         
-        @media (min-width: 992px) {
-            .container {
-                grid-template-columns: 1fr 3fr;
-            }
-        }
-        
-        .controls {
-            background-color: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: var(--page-shadow);
-        }
-        
-        .control-group {
-            margin-bottom: 1rem;
-        }
-        
-        .control-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            color: var(--primary-color);
-        }
-        
-        select, button {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            font-size: 1rem;
-            background-color: white;
-        }
-        
-        select:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
-        
-        button {
-            background-color: var(--primary-color);
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            border: none;
-            cursor: pointer;
-            font-weight: 500;
-            transition: background-color 0.3s;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
-        button:hover {
-            background-color: #0d4448;
-        }
-        
-        .ad-container {
-            background-color: white;
-            border-radius: 8px;
-            padding: 1rem;
-            margin: 1.5rem 0;
-            text-align: center;
-            box-shadow: var(--page-shadow);
-            min-height: 90px;
+        .header-content {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-        }
-        
-        .ad-label {
-            color: var(--light-text);
-            font-size: 0.8rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .ad-placeholder {
-            color: var(--light-text);
-            padding: 2rem;
-            background-color: #f9f9f9;
-            border: 1px dashed var(--border-color);
-            border-radius: 4px;
-            width: 100%;
-        }
-        
-        .viewer-container {
-            background-color: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: var(--page-shadow);
-            min-height: 500px;
-            position: relative;
-        }
-        
-        #viewer-controls {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 1rem;
-            gap: 0.5rem;
             flex-wrap: wrap;
         }
         
-        #viewer-controls button {
-            width: auto;
-            padding: 0.5rem 1rem;
-        }
-        
-        #page-navigation {
-            display: flex;
-            align-items: center;
-            margin: 0 1rem;
-        }
-        
-        #current-page {
-            width: 50px;
-            text-align: center;
-            padding: 0.5rem;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-        }
-        
-        #quran-content {
-            width: 100%;
-            padding: 1rem;
-            line-height: 2;
-            font-size: 1.2rem;
-            text-align: right;
-            direction: rtl;
-            min-height: 400px;
-            max-height: 70vh;
-            overflow-y: auto;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            background: linear-gradient(to bottom, #f9f8f2, #f5f3ea);
-        }
-        
-        .arabic-text {
-            font-family: 'Traditional Arabic', 'Scheherazade New', serif;
+        .logo {
             font-size: 1.8rem;
-            line-height: 2.5;
-            margin-bottom: 1rem;
-            color: #1a1a1a;
-        }
-        
-        .translation {
-            font-style: italic;
-            color: var(--light-text);
-            border-top: 1px dashed var(--border-color);
-            padding-top: 1rem;
-            margin-top: 1rem;
-            text-align: left;
-            direction: ltr;
-        }
-        
-        .surah-title {
-            text-align: center;
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--secondary-color);
-        }
-        
-        .loading {
+            font-weight: 700;
             display: flex;
-            justify-content: center;
             align-items: center;
-            height: 300px;
-            flex-direction: column;
         }
         
-        .spinner {
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            border-left: 4px solid var(--primary-color);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
+        .logo span {
+            color: var(--success);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--success);
+        }
+        
+        .hero {
+            padding: 3rem 0;
+            text-align: center;
+            background-color: white;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
             margin-bottom: 1rem;
+            color: var(--secondary);
         }
         
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .tool-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .tool-section {
+            margin-bottom: 2rem;
+        }
+        
+        .tool-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light-gray);
+        }
+        
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .input-group input, .input-group select, .input-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--light-gray);
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .checkbox-item input {
+            margin-right: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .results {
+            margin-top: 2rem;
+        }
+        
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .keyword-card {
+            background-color: var(--light);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .keyword-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .keyword-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .keyword-metrics {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--light-gray);
+        }
+        
+        .metric {
+            text-align: center;
+        }
+        
+        .metric-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--secondary);
+        }
+        
+        .metric-label {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+        
+        .ad-container {
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .ad-placeholder {
+            background-color: #e9e9e9;
+            padding: 2rem;
+            border-radius: 5px;
+            margin: 1rem 0;
         }
         
         footer {
-            background-color: var(--primary-color);
+            background-color: var(--dark);
             color: white;
-            text-align: center;
-            padding: 1.5rem;
+            padding: 2rem 0;
             margin-top: 3rem;
         }
         
         .footer-content {
-            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--success);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 0.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-section {
+                min-width: 100%;
+            }
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: var(--primary);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
             margin: 0 auto;
         }
         
-        .footer-nav {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 1rem;
-        }
-        
-        .footer-nav a {
-            color: white;
-            margin: 0 1rem;
-            text-decoration: none;
-        }
-        
-        .footer-nav a:hover {
-            text-decoration: underline;
-        }
-        
-        @media (max-width: 767px) {
-            .ad-container {
-                min-height: 50px;
-            }
-            
-            .ad-placeholder {
-                padding: 1rem;
-            }
-            
-            #viewer-controls {
-                flex-wrap: wrap;
-            }
-            
-            .arabic-text {
-                font-size: 1.5rem;
-            }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <div class="logo-icon">📖</div>
-            <h1>Quran PDF Viewer</h1>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">AI<span>Keyword</span>Tool</div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <p>Read the Holy Quran online with multiple translations</p>
     </header>
-    
-    <div class="container">
-        <div class="sidebar">
-            <div class="controls">
-                <div class="control-group">
-                    <label for="surah-select">Surah Selection</label>
-                    <select id="surah-select">
-                        <option value="1">Al-Fatiha (The Opening)</option>
-                        <option value="2">Al-Baqarah (The Cow)</option>
-                        <option value="36">Ya-Sin</option>
-                        <option value="55">Ar-Rahman (The Beneficent)</option>
-                        <option value="67">Al-Mulk (The Sovereignty)</option>
-                        <option value="87">Al-Ala (The Most High)</option>
-                        <option value="93">Ad-Duha (The Morning Hours)</option>
-                        <option value="94">Ash-Sharh (The Relief)</option>
-                        <option value="95">At-Tin (The Fig)</option>
-                        <option value="96">Al-Alaq (The Clot)</option>
-                        <option value="97">Al-Qadr (The Power)</option>
-                        <option value="98">Al-Bayyinah (The Clear Proof)</option>
-                        <option value="99">Az-Zalzalah (The Earthquake)</option>
-                        <option value="100">Al-Adiyat (The Courser)</option>
-                        <option value="101">Al-Qariah (The Calamity)</option>
-                        <option value="102">At-Takathur (The Competition)</option>
-                        <option value="103">Al-Asr (The Time)</option>
-                        <option value="104">Al-Humazah (The Slanderer)</option>
-                        <option value="105">Al-Fil (The Elephant)</option>
-                        <option value="106">Quraish</option>
-                        <option value="107">Al-Maun (The Assistance)</option>
-                        <option value="108">Al-Kawthar (The Abundance)</option>
-                        <option value="109">Al-Kafirun (The Disbelievers)</option>
-                        <option value="110">An-Nasr (The Victory)</option>
-                        <option value="111">Al-Masad (The Palm Fiber)</option>
-                        <option value="112">Al-Ikhlas (The Sincerity)</option>
-                        <option value="113">Al-Falaq (The Daybreak)</option>
-                        <option value="114">An-Nas (The Mankind)</option>
-                    </select>
-                </div>
-                
-                <div class="control-group">
-                    <label for="language">Translation</label>
-                    <select id="language">
-                        <option value="english">English - Sahih International</option>
-                        <option value="arabic">Arabic Only</option>
-                        <option value="urdu">Urdu Translation</option>
-                        <option value="french">French Translation</option>
-                        <option value="spanish">Spanish Translation</option>
-                    </select>
-                </div>
-                
-                <div class="control-group">
-                    <label for="font-size">Text Size</label>
-                    <select id="font-size">
-                        <option value="small">Small</option>
-                        <option value="medium" selected>Medium</option>
-                        <option value="large">Large</option>
-                    </select>
-                </div>
-                
-                <button id="load-selection">Load Selection</button>
-            </div>
+
+    <section class="hero">
+        <div class="container">
+            <h1>AI-Powered Keyword Research Tool</h1>
+            <p>Discover high-performing keywords, analyze competition, and optimize your content for better search engine visibility with our advanced AI technology.</p>
             
-            <div class="ad-container">
-                <div>
-                    <div class="ad-label">Advertisement</div>
-                    <div class="ad-placeholder">
-                        AdSense Unit ID: <strong>quran-sidebar-ad</strong>ca-app-pub-7184084592363514/3718282250
+            <div class="tool-container">
+                <div class="tool-section">
+                    <h2>Keyword Research Parameters</h2>
+                    <div class="input-group">
+                        <label for="seed-keyword">Seed Keyword</label>
+                        <input type="text" id="seed-keyword" placeholder="Enter your base keyword (e.g., 'digital marketing')">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="country">Target Country</label>
+                        <select id="country">
+                            <option value="us">United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="ca">Canada</option>
+                            <option value="au">Australia</option>
+                            <option value="in">India</option>
+                            <option value="de">Germany</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="language">Language</label>
+                        <select id="language">
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="hi">Hindi</option>
+                            <option value="pt">Portuguese</option>
+                        </select>
+                    </div>
+                    
+                    <h3>Additional Options</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="long-tail" checked>
+                            <label for="long-tail">Include long-tail keywords</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="questions" checked>
+                            <label for="questions">Include question keywords</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="local" checked>
+                            <label for="local">Include local keywords</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="related" checked>
+                            <label for="related">Include related keywords</label>
+                        </div>
+                    </div>
+                    
+                    <button id="generate-btn" class="btn">Generate Keywords</button>
+                    
+                    <div class="loading" id="loading">
+                        <div class="loading-spinner"></div>
+                        <p>Analyzing keywords with AI...</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="ad-container">
-                <div>
-                    <div class="ad-label">Advertisement</div>
-                    <div class="ad-placeholder">
-                        AdSense Unit ID: <strong>quran-sidebar-ad-2</strong>ca-app-pub-7184084592363514/4839792234
+                
+                <div class="ad-container">
+                    <h3>Advertisement Space</h3>
+                    <div class="ad-placeholder" id="ad-unit-1">
+                        <p>AdSense Ad Unit Will Appear Here</p>
+                    </div>
+                </div>
+                
+                <div class="tool-section">
+                    <h2>Keyword Results</h2>
+                    <div class="results" id="keyword-results">
+                        <p>Your keyword suggestions will appear here after analysis.</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="main-content">
-            <div class="ad-container">
-                <div>
-                    <div class="ad-label">Advertisement</div>
-                    <div class="ad-placeholder">
-                        AdSense Unit ID: <strong>quran-top-ad</strong>ca-app-pub-7184084592363514/4927422146
-                    </div>
-                </div>
-            </div>
-            
-            <div class="viewer-container">
-                <div id="viewer-controls">
-                    <button id="prev-page">Previous</button>
-                    <div id="page-navigation">
-                        <span>Surah </span>
-                        <input type="number" id="current-page" value="1" min="1" max="114">
-                    </div>
-                    <button id="next-page">Next</button>
-                    <button id="font-increase">A+</button>
-                    <button id="font-decrease">A-</button>
-                </div>
-                
-                <div id="quran-content">
-                    <div class="surah-title">Al-Fatiha (The Opening)</div>
-                    <div class="arabic-text">
-                        بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ (1) الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ (2) الرَّحْمَٰنِ الرَّحِيمِ (3) مَالِكِ يَوْمِ الدِّينِ (4) إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ (5) اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ (6) صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ (7)
-                    </div>
-                    <div class="translation">
-                        In the name of Allah, the Entirely Merciful, the Especially Merciful. (1) [All] praise is [due] to Allah, Lord of the worlds - (2) The Entirely Merciful, the Especially Merciful - (3) Sovereign of the Day of Recompense. (4) It is You we worship and You we ask for help. (5) Guide us to the straight path - (6) The path of those upon whom You have bestowed favor, not of those who have earned [Your] anger or of those who are astray. (7)
-                    </div>
-                </div>
-            </div>
-            
-            <div class="ad-container">
-                <div>
-                    <div class="ad-label">Advertisement</div>
-                    <div class="ad-placeholder">
-                        AdSense Unit ID: <strong>quran-bottom-ad</strong>
-                    </div>
-                </div>
+    </section>
+
+    <div class="container">
+        <div class="ad-container">
+            <h3>Advertisement</h3>
+            <div class="ad-placeholder" id="ad-unit-2">
+                <p>AdSense Ad Unit Will Appear Here</p>
             </div>
         </div>
     </div>
-    
+
     <footer>
-        <div class="footer-content">
-            <div class="footer-nav">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About AI Keyword Tool</h3>
+                    <p>Advanced AI-powered keyword research tool that helps content creators, SEO specialists, and digital marketers find the perfect keywords for their content strategy.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@aikeywordtool.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
             </div>
-            <p>&copy; 2023 Quran PDF Viewer. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AI Keyword Research Tool. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script>
-        // Sample Quran data (in a real implementation, this would be more extensive)
-        const quranData = {
-            "1": {
-                "name": "Al-Fatiha",
-                "translation": "The Opening",
-                "verses": [
-                    "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
-                    "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
-                    "الرَّحْمَٰنِ الرَّحِيمِ",
-                    "مَالِكِ يَوْمِ الدِّينِ",
-                    "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
-                    "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
-                    "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ"
-                ],
-                "translations": {
-                    "english": [
-                        "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
-                        "[All] praise is [due] to Allah, Lord of the worlds -",
-                        "The Entirely Merciful, the Especially Merciful -",
-                        "Sovereign of the Day of Recompense.",
-                        "It is You we worship and You we ask for help.",
-                        "Guide us to the straight path -",
-                        "The path of those upon whom You have bestowed favor, not of those who have earned [Your] anger or of those who are astray."
-                    ]
+        document.addEventListener('DOMContentLoaded', function() {
+            const generateBtn = document.getElementById('generate-btn');
+            const loadingElement = document.getElementById('loading');
+            const resultsContainer = document.getElementById('keyword-results');
+            
+            // Sample keyword data for demonstration
+            const sampleKeywords = [
+                {
+                    keyword: "digital marketing strategies",
+                    volume: 14500,
+                    difficulty: 72,
+                    cpc: 8.65
+                },
+                {
+                    keyword: "digital marketing for small business",
+                    volume: 9900,
+                    difficulty: 68,
+                    cpc: 12.40
+                },
+                {
+                    keyword: "digital marketing courses",
+                    volume: 27100,
+                    difficulty: 78,
+                    cpc: 15.20
+                },
+                {
+                    keyword: "digital marketing agency",
+                    volume: 20100,
+                    difficulty: 85,
+                    cpc: 22.35
+                },
+                {
+                    keyword: "what is digital marketing",
+                    volume: 135000,
+                    difficulty: 65,
+                    cpc: 6.50
+                },
+                {
+                    keyword: "digital marketing jobs",
+                    volume: 40500,
+                    difficulty: 71,
+                    cpc: 9.80
+                },
+                {
+                    keyword: "digital marketing certification",
+                    volume: 22200,
+                    difficulty: 69,
+                    cpc: 11.25
+                },
+                {
+                    keyword: "digital marketing trends 2023",
+                    volume: 8800,
+                    difficulty: 63,
+                    cpc: 10.45
                 }
-            },
-            "36": {
-                "name": "Ya-Sin",
-                "translation": "Ya Sin",
-                "verses": [
-                    "يس (1) وَالْقُرْآنِ الْحَكِيمِ (2) إِنَّكَ لَمِنَ الْمُرْسَلِينَ (3) عَلَىٰ صِرَاطٍ مُسْتَقِيمٍ (4)",
-                    "تَنْزِيلَ الْعَزِيزِ الرَّحِيمِ (5) لِتُنْذِرَ قَوْمًا مَا أُنْذِرَ آبَاؤُهُمْ فَهُمْ غَافِلُونَ (6)",
-                    "لَقَدْ حَقَّ الْقَوْلُ عَلَىٰ أَكْثَرِهِمْ فَهُمْ لَا يُؤْمِنُونَ (7)",
-                    "إِنَّا جَعَلْنَا فِي أَعْنَاقِهِمْ أَغْلَالًا فَهِيَ إِلَى الْأَذْقَانِ فَهُمْ مُقْمَحُونَ (8)"
-                ],
-                "translations": {
-                    "english": [
-                        "Ya, Seen. (1) By the wise Qur'an. (2) Indeed you, [O Muhammad], are from among the messengers, (3) On a straight path. (4)",
-                        "[This is] a revelation of the Exalted in Might, the Merciful, (5) That you may warn a people whose forefathers were not warned, so they are unaware. (6)",
-                        "Already the word has come into effect upon most of them, so they do not believe. (7)",
-                        "Indeed, We have put shackles on their necks, and they are to their chins, so they are with heads [kept] aloft. (8)"
-                    ]
+            ];
+            
+            generateBtn.addEventListener('click', function() {
+                const seedKeyword = document.getElementById('seed-keyword').value.trim();
+                
+                if (!seedKeyword) {
+                    alert('Please enter a seed keyword to generate suggestions.');
+                    return;
                 }
-            },
-            "55": {
-                "name": "Ar-Rahman",
-                "translation": "The Beneficent",
-                "verses": [
-                    "الرَّحْمَٰنُ (1) عَلَّمَ الْقُرْآنَ (2) خَلَقَ الْإِنْسَانَ (3) عَلَّمَهُ الْبَيَانَ (4)",
-                    "الشَّمْسُ وَالْقَمَرُ بِحُسْبَانٍ (5) وَالنَّجْمُ وَالشَّجَرُ يَسْجُدَانِ (6)",
-                    "وَالسَّمَاءَ رَفَعَهَا وَوَضَعَ الْمِيزَانَ (7) أَلَّا تَطْغَوْا فِي الْمِيزَانِ (8)",
-                    "وَأَقِيمُوا الْوَزْنَ بِالْقِسْطِ وَلَا تُخْسِرُوا الْمِيزَانَ (9)"
-                ],
-                "translations": {
-                    "english": [
-                        "The Most Merciful (1) Taught the Qur'an, (2) Created man, (3) [And] taught him eloquence. (4)",
-                        "The sun and the moon [move] by precise calculation, (5) And the stars and trees prostrate. (6)",
-                        "And the heaven He raised and imposed the balance (7) That you not transgress within the balance. (8)",
-                        "And establish weight in justice and do not make deficient the balance. (9)"
-                    ]
-                }
-            }
-        };
-
-        // Initialize the viewer
-        function initViewer() {
-            const surahSelect = document.getElementById('surah-select');
-            const languageSelect = document.getElementById('language');
-            const loadButton = document.getElementById('load-selection');
-            const prevButton = document.getElementById('prev-page');
-            const nextButton = document.getElementById('next-page');
-            const currentPage = document.getElementById('current-page');
-            const fontIncrease = document.getElementById('font-increase');
-            const fontDecrease = document.getElementById('font-decrease');
-            const quranContent = document.getElementById('quran-content');
-            
-            // Load initial content
-            loadSurah(1, 'english');
-            
-            // Event listeners
-            loadButton.addEventListener('click', function() {
-                const surah = surahSelect.value;
-                const language = languageSelect.value;
-                loadSurah(surah, language);
-                currentPage.value = surah;
-            });
-            
-            prevButton.addEventListener('click', function() {
-                let current = parseInt(currentPage.value);
-                if (current > 1) {
-                    current--;
-                    currentPage.value = current;
-                    loadSurah(current, languageSelect.value);
-                }
-            });
-            
-            nextButton.addEventListener('click', function() {
-                let current = parseInt(currentPage.value);
-                if (current < 114) {
-                    current++;
-                    currentPage.value = current;
-                    loadSurah(current, languageSelect.value);
-                }
-            });
-            
-            currentPage.addEventListener('change', function() {
-                let surah = parseInt(this.value);
-                if (surah < 1) surah = 1;
-                if (surah > 114) surah = 114;
-                this.value = surah;
-                loadSurah(surah, languageSelect.value);
-            });
-            
-            fontIncrease.addEventListener('click', function() {
-                const arabicText = document.querySelector('.arabic-text');
-                const currentSize = parseFloat(window.getComputedStyle(arabicText).fontSize);
-                arabicText.style.fontSize = (currentSize + 2) + 'px';
-            });
-            
-            fontDecrease.addEventListener('click', function() {
-                const arabicText = document.querySelector('.arabic-text');
-                const currentSize = parseFloat(window.getComputedStyle(arabicText).fontSize);
-                if (currentSize > 16) {
-                    arabicText.style.fontSize = (currentSize - 2) + 'px';
-                }
-            });
-        }
-        
-        // Load a surah
-        function loadSurah(surah, language) {
-            const quranContent = document.getElementById('quran-content');
-            
-            // Show loading state
-            quranContent.innerHTML = `
-                <div class="loading">
-                    <div class="spinner"></div>
-                    <p>Loading Surah ${surah}...</p>
-                </div>
-            `;
-            
-            // Simulate loading delay
-            setTimeout(() => {
-                if (quranData[surah]) {
-                    const surahInfo = quranData[surah];
-                    let versesHTML = '';
+                
+                // Show loading animation
+                loadingElement.style.display = 'block';
+                resultsContainer.innerHTML = '';
+                
+                // Simulate AI processing time
+                setTimeout(function() {
+                    loadingElement.style.display = 'none';
                     
-                    // Add Arabic verses
-                    surahInfo.verses.forEach((verse, index) => {
-                        versesHTML += `<div class="verse">${verse}</div>`;
+                    // Generate results HTML
+                    let resultsHTML = `
+                        <h3>Keyword Suggestions for "${seedKeyword}"</h3>
+                        <div class="results-grid">
+                    `;
+                    
+                    sampleKeywords.forEach(item => {
+                        resultsHTML += `
+                            <div class="keyword-card">
+                                <h3>${item.keyword}</h3>
+                                <p>Relevant keyword for your content strategy</p>
+                                <div class="keyword-metrics">
+                                    <div class="metric">
+                                        <div class="metric-value">${item.volume.toLocaleString()}</div>
+                                        <div class="metric-label">Monthly Volume</div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-value">${item.difficulty}%</div>
+                                        <div class="metric-label">Competition</div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-value">$${item.cpc}</div>
+                                        <div class="metric-label">CPC</div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
                     });
                     
-                    // Generate HTML content
-                    const contentHTML = `
-                        <div class="surah-title">${surahInfo.name} (${surahInfo.translation})</div>
-                        <div class="arabic-text">
-                            ${versesHTML}
-                        </div>
-                        ${language !== 'arabic' ? `
-                        <div class="translation">
-                            ${surahInfo.translations[language] ? surahInfo.translations[language].join('<br>') : 'Translation not available'}
-                        </div>
-                        ` : ''}
-                    `;
+                    resultsHTML += `</div>`;
+                    resultsContainer.innerHTML = resultsHTML;
                     
-                    quranContent.innerHTML = contentHTML;
-                } else {
-                    // Fallback content for surahs not in our sample data
-                    quranContent.innerHTML = `
-                        <div class="surah-title">Surah ${surah}</div>
-                        <div class="loading">
-                            <p>This surah is not available in the demo. In a full implementation, all 114 surahs would be available.</p>
-                            <p><small>To view the complete Quran, please check back later or use a complete Quran website.</small></p>
-                        </div>
-                    `;
-                }
-            }, 500);
-        }
-        
-        // Initialize the viewer when the page loads
-        window.onload = function() {
-            initViewer();
-        };
+                }, 2000); // Simulate 2 seconds of "AI processing"
+            });
+            
+            // AdSense integration simulation
+            const adUnits = document.querySelectorAll('.ad-placeholder');
+            adUnits.forEach(ad => {
+                ad.addEventListener('click', function() {
+                    const adUnitId = prompt('Enter your AdSense Ad Unit ID for monetization:');
+                    if (adUnitId) {
+                        this.innerHTML = `<p>AdSense Ad (ID: ${adUnitId}) will be displayed here</p>`;
+                        this.style.backgroundColor = '#d4edda';
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
