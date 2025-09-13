@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Keyword Research Tool | SEO Optimization</title>
-    <meta name="description" content="Advanced AI-powered keyword research tool for SEO optimization and content strategy">
-    <meta name="keywords" content="keyword research, SEO tool, AI keyword analysis, content optimization">
+    <title>AI Keyword Research Tool - SEO Optimization & Analysis</title>
+    <meta name="description" content="Free AI-powered keyword research tool. Discover high-volume keywords, analyze competition, and improve your SEO strategy with actionable insights.">
+    <!-- Canonical URL (add your actual URL) -->
+    <link rel="canonical" href="https://yourdomain.com/keyword-research-tool">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="AI Keyword Research Tool - SEO Optimization & Analysis">
+    <meta property="og:description" content="Free AI-powered keyword research tool for SEO optimization and content strategy">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Keyword Research Tool - SEO Optimization">
+    <meta name="twitter:description" content="Free AI-powered keyword research tool for SEO optimization">
+    <meta name="twitter:image" content="https://yourdomain.com/images/twitter-image.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "AI Keyword Research Tool",
+      "description": "Free AI-powered keyword research tool for SEO optimization and content strategy",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
     <style>
+        /* Your existing CSS remains unchanged */
         :root {
             --primary: #4361ee;
             --secondary: #3a0ca3;
@@ -319,6 +352,22 @@
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
+        
+        /* Breadcrumb styling */
+        .breadcrumb {
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .breadcrumb span {
+            margin: 0 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -338,6 +387,13 @@
             </div>
         </div>
     </header>
+
+    <div class="container">
+        <!-- Breadcrumb for better SEO -->
+        <div class="breadcrumb">
+            <a href="#">Home</a> <span>&gt;</span> <a href="#">Tools</a> <span>&gt;</span> Keyword Research
+        </div>
+    </div>
 
     <section class="hero">
         <div class="container">
@@ -406,7 +462,7 @@
                 
                 <div class="ad-container">
                     <h3>Advertisement Space</h3>
-                    <div class="ad-placeholder" id="ad-unit-1">ca-app-pub-7184084592363514/5981994263
+                    <div class="ad-placeholder" id="ad-unit-1"ca-app-pub 7184084592363514/5981994263
                         <p>AdSense Ad Unit Will Appear Here</p>
                     </div>
                 </div>
@@ -424,7 +480,7 @@
     <div class="container">
         <div class="ad-container">
             <h3>Advertisement</h3>
-            <div class="ad-placeholder" id="ad-unit-2">ca-app-pub-7184084592363514/6030095724
+            <div class="ad-placeholder" id="ad-unit-2"ca-app-pub7184084592363514/6030095724
                 <p>AdSense Ad Unit Will Appear Here</p>
             </div>
         </div>
@@ -528,6 +584,9 @@
                 // Show loading animation
                 loadingElement.style.display = 'block';
                 resultsContainer.innerHTML = '';
+                
+                // Update page title dynamically based on search
+                document.title = `${seedKeyword} - Keyword Results | AI Keyword Research Tool`;
                 
                 // Simulate AI processing time
                 setTimeout(function() {
