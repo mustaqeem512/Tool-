@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Keyword Research Tool - SEO Optimization & Analysis</title>
-    <meta name="description" content="Free AI-powered keyword research tool. Discover high-volume keywords, analyze competition, and improve your SEO strategy with actionable insights.">
+    <!-- Optimized Title Tag: 57 characters -->
+    <title>Keyword Research Tool - AI SEO Analysis & Optimization | Free</title>
+    <!-- Optimized Meta Description: 154 characters -->
+    <meta name="description" content="Free AI-powered keyword research tool. Find high-volume keywords, analyze competition & improve SEO. Get actionable insights for better ranking.">
     <!-- Canonical URL (add your actual URL) -->
     <link rel="canonical" href="https://yourdomain.com/keyword-research-tool">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="AI Keyword Research Tool - SEO Optimization & Analysis">
+    <meta property="og:title" content="AI Keyword Research Tool - SEO Optimization">
     <meta property="og:description" content="Free AI-powered keyword research tool for SEO optimization and content strategy">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourdomain.com">
@@ -368,20 +370,37 @@
         .breadcrumb span {
             margin: 0 0.5rem;
         }
+        
+        /* SEO-friendly hidden text for additional keywords */
+        .seo-keywords {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
+    <!-- SEO-friendly hidden keywords for additional context -->
+    <div class="seo-keywords">
+        Keyword research, SEO tool, keyword analysis, search volume, keyword difficulty, content optimization, 
+        SEO strategy, organic traffic, search engine optimization, keyword planner, content marketing, 
+        SEO keywords, backlink analysis, competitor analysis, SERP analysis
+    </div>
+    
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">AI<span>Keyword</span>Tool</div>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" aria-label="Home">Home</a></li>
+                        <li><a href="#" aria-label="Features">Features</a></li>
+                        <li><a href="#" aria-label="Pricing">Pricing</a></li>
+                        <li><a href="#" aria-label="Blog">Blog</a></li>
+                        <li><a href="#" aria-label="Contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -390,101 +409,105 @@
 
     <div class="container">
         <!-- Breadcrumb for better SEO -->
-        <div class="breadcrumb">
-            <a href="#">Home</a> <span>&gt;</span> <a href="#">Tools</a> <span>&gt;</span> Keyword Research
-        </div>
+        <nav aria-label="Breadcrumb">
+            <div class="breadcrumb">
+                <a href="#">Home</a> <span>&gt;</span> <a href="#">Tools</a> <span>&gt;</span> Keyword Research
+            </div>
+        </nav>
     </div>
 
-    <section class="hero">
+    <main> <!-- Added main tag for better semantic structure -->
+        <section class="hero">
+            <div class="container">
+                <h1>AI-Powered Keyword Research Tool</h1> <!-- This is actually an h1 which is good for SEO -->
+                <p>Discover high-performing keywords, analyze competition, and optimize your content for better search engine visibility with our advanced AI technology.</p>
+                
+                <div class="tool-container">
+                    <div class="tool-section">
+                        <h2>Keyword Research Parameters</h2>
+                        <div class="input-group">
+                            <label for="seed-keyword">Seed Keyword</label>
+                            <input type="text" id="seed-keyword" placeholder="Enter your base keyword (e.g., 'digital marketing')" aria-label="Enter seed keyword">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="country">Target Country</label>
+                            <select id="country" aria-label="Select target country">
+                                <option value="us">United States</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="ca">Canada</option>
+                                <option value="au">Australia</option>
+                                <option value="in">India</option>
+                                <option value="de">Germany</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="language">Language</label>
+                            <select id="language" aria-label="Select language">
+                                <option value="en">English</option>
+                                <option value="es">Spanish</option>
+                                <option value="fr">French</option>
+                                <option value="de">German</option>
+                                <option value="hi">Hindi</option>
+                                <option value="pt">Portuguese</option>
+                            </select>
+                        </div>
+                        
+                        <h3>Additional Options</h3>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="long-tail" checked aria-checked="true">
+                                <label for="long-tail">Include long-tail keywords</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="questions" checked aria-checked="true">
+                                <label for="questions">Include question keywords</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="local" checked aria-checked="true">
+                                <label for="local">Include local keywords</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="related" checked aria-checked="true">
+                                <label for="related">Include related keywords</label>
+                            </div>
+                        </div>
+                        
+                        <button id="generate-btn" class="btn">Generate Keywords</button>
+                        
+                        <div class="loading" id="loading">
+                            <div class="loading-spinner"></div>
+                            <p>Analyzing keywords with AI...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="ad-container">
+                        <h3>Advertisement Space</h3>
+                        <div class="ad-placeholder" id="ad-unit-1">
+                            <p>AdSense Ad Unit Will Appear Here</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-section">
+                        <h2>Keyword Results</h2>
+                        <div class="results" id="keyword-results">
+                            <p>Your keyword suggestions will appear here after analysis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="container">
-            <h1>AI-Powered Keyword Research Tool</h1>
-            <p>Discover high-performing keywords, analyze competition, and optimize your content for better search engine visibility with our advanced AI technology.</p>
-            
-            <div class="tool-container">
-                <div class="tool-section">
-                    <h2>Keyword Research Parameters</h2>
-                    <div class="input-group">
-                        <label for="seed-keyword">Seed Keyword</label>
-                        <input type="text" id="seed-keyword" placeholder="Enter your base keyword (e.g., 'digital marketing')">
-                    </div>
-                    
-                    <div class="input-group">
-                        <label for="country">Target Country</label>
-                        <select id="country">
-                            <option value="us">United States</option>
-                            <option value="uk">United Kingdom</option>
-                            <option value="ca">Canada</option>
-                            <option value="au">Australia</option>
-                            <option value="in">India</option>
-                            <option value="de">Germany</option>
-                        </select>
-                    </div>
-                    
-                    <div class="input-group">
-                        <label for="language">Language</label>
-                        <select id="language">
-                            <option value="en">English</option>
-                            <option value="es">Spanish</option>
-                            <option value="fr">French</option>
-                            <option value="de">German</option>
-                            <option value="hi">Hindi</option>
-                            <option value="pt">Portuguese</option>
-                        </select>
-                    </div>
-                    
-                    <h3>Additional Options</h3>
-                    <div class="checkbox-group">
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="long-tail" checked>
-                            <label for="long-tail">Include long-tail keywords</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="questions" checked>
-                            <label for="questions">Include question keywords</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="local" checked>
-                            <label for="local">Include local keywords</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="related" checked>
-                            <label for="related">Include related keywords</label>
-                        </div>
-                    </div>
-                    
-                    <button id="generate-btn" class="btn">Generate Keywords</button>
-                    
-                    <div class="loading" id="loading">
-                        <div class="loading-spinner"></div>
-                        <p>Analyzing keywords with AI...</p>
-                    </div>
-                </div>
-                
-                <div class="ad-container">
-                    <h3>Advertisement Space</h3>
-                    <div class="ad-placeholder" id="ad-unit-1"ca-app-pub 7184084592363514/5981994263
-                        <p>AdSense Ad Unit Will Appear Here</p>
-                    </div>
-                </div>
-                
-                <div class="tool-section">
-                    <h2>Keyword Results</h2>
-                    <div class="results" id="keyword-results">
-                        <p>Your keyword suggestions will appear here after analysis.</p>
-                    </div>
+            <div class="ad-container">
+                <h3>Advertisement</h3>
+                <div class="ad-placeholder" id="ad-unit-2">
+                    <p>AdSense Ad Unit Will Appear Here</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <div class="container">
-        <div class="ad-container">
-            <h3>Advertisement</h3>
-            <div class="ad-placeholder" id="ad-unit-2"ca-app-pub7184084592363514/6030095724
-                <p>AdSense Ad Unit Will Appear Here</p>
-            </div>
-        </div>
-    </div>
+    </main>
 
     <footer>
         <div class="container">
@@ -588,13 +611,17 @@
                 // Update page title dynamically based on search
                 document.title = `${seedKeyword} - Keyword Results | AI Keyword Research Tool`;
                 
+                // Update meta description dynamically
+                const metaDescription = document.querySelector('meta[name="description"]');
+                metaDescription.setAttribute('content', `Keyword results for ${seedKeyword}. Find high-volume keywords, analyze competition & improve SEO with our AI tool.`);
+                
                 // Simulate AI processing time
                 setTimeout(function() {
                     loadingElement.style.display = 'none';
                     
                     // Generate results HTML
                     let resultsHTML = `
-                        <h3>Keyword Suggestions for "${seedKeyword}"</h3>
+                        <h2>Keyword Suggestions for "${seedKeyword}"</h2>
                         <div class="results-grid">
                     `;
                     
