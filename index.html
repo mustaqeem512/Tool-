@@ -43,3 +43,12 @@ window.resetAdSenseConfig = () => {
         return report.score;
     }
 };
+/**
+ * User Settings and Preferences System
+ * Comprehensive user customization and preferences management
+...
+window.resetAllSettings = () => {
+    if (window.userSettings) {
+        window.userSettings.resetSettings();
+    }
+};
